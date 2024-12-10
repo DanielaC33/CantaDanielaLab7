@@ -25,7 +25,7 @@ public partial class ShopPage : ContentPage
 
         if (shop != null)
         {
-            bool confirm = await DisplayAlert("Confirmare", "Sigur vrei s? ?tergi acest magazin?", "Da", "Nu");
+            bool confirm = await DisplayAlert("Confirmare", "Sigur vrei sa stergi acest magazin?", "Da", "Nu");
             if (confirm)
             {
                 await App.Database.DeleteShopAsync(shop);
